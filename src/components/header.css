@@ -1,0 +1,12 @@
+h1{
+    font-size: 30px;
+}
+
+li{
+    list-style: none;
+    display: flex;
+}
+
+.logo{
+    height: 80px;
+}
