@@ -5,16 +5,25 @@ import {Footer} from "./components/Footer";
 import React from 'react';
 import {TaskList} from "./components/TaskList";
 import {Counter} from "./components/Counter";
+import AddTask from "./components/AddTask";
+import { useState } from 'react';
 
 export function App () {
+
+    const [tasks, setTasks] = useState([]);
+
     const info = "random";
     return ( 
         <>    
             <div className='App'>
                 <Header/>
+                <main>
                 <Counter/>
-                <TaskList info={info} />
-                <Footer/>          
+                <AddTask tasks={tasks} setTasks={setTasks}/>
+                <TaskList info={info} tasks={tasks} setTasks={setTasks}/>
+                
+                </main>
+               <Footer/>          
             </div>  
         </>      
     );

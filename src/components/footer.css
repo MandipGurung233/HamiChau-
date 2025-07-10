@@ -1,0 +1,13 @@
+
+footer p{
+    font-size: 18px;
+    text-align: center;
+}
+
+footer{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--theme-border);
+}
